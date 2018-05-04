@@ -13,7 +13,7 @@ const server = express()
   .use((req, res) => res.sendFile(INDEX) )
  .listen(PORT, () => console.log("Listening on localhost:" + PORT));
 
-// Initiatlize SocketIO
+// Initiatlize SocketIO // *-*-*--* vadim *-*-*-*-*-* //
 const io = socketIO(server);
 
 // Register "connection" events to the WebSocket
