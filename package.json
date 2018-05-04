@@ -1,13 +1,21 @@
 {
-  "name": "websocket-test-app",
-  "description": "Cross Device Communication using WebSockets",
-  "scripts": {
-    "start": "node index.js"
+  "name": "websockets-vanilla",
+  "version": "1.0.0",
+  "engines": {
+    "node": "6.2.0"
   },
+  "description": "",
   "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.2",
-    "socketio": "^1.0.0"
+    "bufferutil": "1.2.1",
+    "express": "4.13.4",
+    "utf-8-validate": "1.2.1",
+    "ws": "1.1.0"
   }
 }
