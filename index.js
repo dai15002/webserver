@@ -23,9 +23,9 @@ io.on("connection", function(socket) {
     // join channel provided by client
     socket.join(room)
     // Register "image" events, sent by the client
-    socket.on("canvas_points", function(points) {
+    socket.on("image", function(msg) {
       // Broadcast the "image" event to all other clients in the room
-      socket.broadcast.to(room).emit("canvas_points", points);
+      socket.broadcast.to(room).emit("image", msg);
     });
   })
 });
