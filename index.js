@@ -22,6 +22,8 @@ io.on("connection", function(socket) {
   socket.on("join", function (room) {
     // join channel provided by client
     socket.join(room)
+    //console.log('Client connected');
+    alert("connected");
     // Register "image" events, sent by the client
     socket.on("image", function(msg) {
       // Broadcast the "image" event to all other clients in the room
